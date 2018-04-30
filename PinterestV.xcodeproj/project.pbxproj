@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA8271A2209724150020FBC2 /* PinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8271A1209724150020FBC2 /* PinCell.swift */; };
+		FA959E9E20962EC6006D8E94 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA959E9D20962EC6006D8E94 /* NetworkManager.swift */; };
+		FA959EA0209651C7006D8E94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA959E9F209651C7006D8E94 /* User.swift */; };
+		FA959EA2209693A4006D8E94 /* PinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA959EA1209693A4006D8E94 /* PinsTableViewController.swift */; };
+		FA959EA420969C08006D8E94 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA959EA320969C08006D8E94 /* Pin.swift */; };
+		FA959EA620969FA5006D8E94 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA959EA520969FA5006D8E94 /* Board.swift */; };
+		FACE04192094A40100989758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE04182094A40100989758 /* AppDelegate.swift */; };
+		FACE041B2094A40100989758 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE041A2094A40100989758 /* LoginViewController.swift */; };
+		FACE041E2094A40100989758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACE041C2094A40100989758 /* Main.storyboard */; };
+		FACE04212094A40100989758 /* PinterestV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACE041F2094A40100989758 /* PinterestV.xcdatamodeld */; };
+		FACE04232094A40100989758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACE04222094A40100989758 /* Assets.xcassets */; };
+		FACE04262094A40100989758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACE04242094A40100989758 /* LaunchScreen.storyboard */; };
+		FACE042F20951F7F00989758 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE042E20951F7F00989758 /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA8271A1209724150020FBC2 /* PinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCell.swift; sourceTree = "<group>"; };
+		FA959E9D20962EC6006D8E94 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA959E9F209651C7006D8E94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA959EA1209693A4006D8E94 /* PinsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinsTableViewController.swift; sourceTree = "<group>"; };
+		FA959EA320969C08006D8E94 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		FA959EA520969FA5006D8E94 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		FACE04152094A40100989758 /* PinterestV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinterestV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE04182094A40100989758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACE041A2094A40100989758 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FACE041D2094A40100989758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACE04202094A40100989758 /* PinterestV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinterestV.xcdatamodel; sourceTree = "<group>"; };
+		FACE04222094A40100989758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACE04252094A40100989758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACE04272094A40100989758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACE042E20951F7F00989758 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACE04122094A40000989758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA82719D209715C00020FBC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA959E9F209651C7006D8E94 /* User.swift */,
+				FA959EA520969FA5006D8E94 /* Board.swift */,
+				FA959EA320969C08006D8E94 /* Pin.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA82719E209715C90020FBC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8271A1209724150020FBC2 /* PinCell.swift */,
+				FACE04242094A40100989758 /* LaunchScreen.storyboard */,
+				FACE041C2094A40100989758 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA82719F209715D70020FBC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FACE041A2094A40100989758 /* LoginViewController.swift */,
+				FACE042E20951F7F00989758 /* ProfileViewController.swift */,
+				FA959EA1209693A4006D8E94 /* PinsTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA8271A0209716040020FBC2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FACE04182094A40100989758 /* AppDelegate.swift */,
+				FA959E9D20962EC6006D8E94 /* NetworkManager.swift */,
+				FACE04222094A40100989758 /* Assets.xcassets */,
+				FACE04272094A40100989758 /* Info.plist */,
+				FACE041F2094A40100989758 /* PinterestV.xcdatamodeld */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		FACE040C2094A40000989758 = {
+			isa = PBXGroup;
+			children = (
+				FACE04172094A40100989758 /* PinterestV */,
+				FACE04162094A40100989758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FACE04162094A40100989758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACE04152094A40100989758 /* PinterestV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACE04172094A40100989758 /* PinterestV */ = {
+			isa = PBXGroup;
+			children = (
+				FA82719D209715C00020FBC2 /* Models */,
+				FA82719E209715C90020FBC2 /* Views */,
+				FA82719F209715D70020FBC2 /* Controllers */,
+				FA8271A0209716040020FBC2 /* Support */,
+			);
+			path = PinterestV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACE04142094A40000989758 /* PinterestV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACE042A2094A40100989758 /* Build configuration list for PBXNativeTarget "PinterestV" */;
+			buildPhases = (
+				FACE04112094A40000989758 /* Sources */,
+				FACE04122094A40000989758 /* Frameworks */,
+				FACE04132094A40000989758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinterestV;
+			productName = PinterestV;
+			productReference = FACE04152094A40100989758 /* PinterestV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACE040D2094A40000989758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Alex Voronov";
+				TargetAttributes = {
+					FACE04142094A40000989758 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GHALJQTKL9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FACE04102094A40000989758 /* Build configuration list for PBXProject "PinterestV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACE040C2094A40000989758;
+			productRefGroup = FACE04162094A40100989758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACE04142094A40000989758 /* PinterestV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACE04132094A40000989758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE04262094A40100989758 /* LaunchScreen.storyboard in Resources */,
+				FACE04232094A40100989758 /* Assets.xcassets in Resources */,
+				FACE041E2094A40100989758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACE04112094A40000989758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA959EA2209693A4006D8E94 /* PinsTableViewController.swift in Sources */,
+				FACE04212094A40100989758 /* PinterestV.xcdatamodeld in Sources */,
+				FACE041B2094A40100989758 /* LoginViewController.swift in Sources */,
+				FA959EA420969C08006D8E94 /* Pin.swift in Sources */,
+				FA959EA0209651C7006D8E94 /* User.swift in Sources */,
+				FA959E9E20962EC6006D8E94 /* NetworkManager.swift in Sources */,
+				FACE042F20951F7F00989758 /* ProfileViewController.swift in Sources */,
+				FA8271A2209724150020FBC2 /* PinCell.swift in Sources */,
+				FACE04192094A40100989758 /* AppDelegate.swift in Sources */,
+				FA959EA620969FA5006D8E94 /* Board.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FACE041C2094A40100989758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACE041D2094A40100989758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACE04242094A40100989758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACE04252094A40100989758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACE04282094A40100989758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACE04292094A40100989758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACE042B2094A40100989758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GHALJQTKL9;
+				INFOPLIST_FILE = PinterestV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexV.PinterestV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FACE042C2094A40100989758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GHALJQTKL9;
+				INFOPLIST_FILE = PinterestV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexV.PinterestV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACE04102094A40000989758 /* Build configuration list for PBXProject "PinterestV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE04282094A40100989758 /* Debug */,
+				FACE04292094A40100989758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACE042A2094A40100989758 /* Build configuration list for PBXNativeTarget "PinterestV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE042B2094A40100989758 /* Debug */,
+				FACE042C2094A40100989758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FACE041F2094A40100989758 /* PinterestV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FACE04202094A40100989758 /* PinterestV.xcdatamodel */,
+			);
+			currentVersion = FACE04202094A40100989758 /* PinterestV.xcdatamodel */;
+			path = PinterestV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FACE040D2094A40000989758 /* Project object */;
+}
