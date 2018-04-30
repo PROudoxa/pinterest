@@ -47,15 +47,15 @@ extension PinsTableViewController {
         cell.createdAtLabel.text = boards[indexPath.section].pins[indexPath.row].createdAt
         cell.notesLabel.text = boards[indexPath.section].pins[indexPath.row].note
         
+        // FIXME: problem with images layout and updating
         if let linkString = boards[indexPath.section].pins[indexPath.row].imageUrlString {
-            //DispatchQueue.global(qos: .background).async {
+            DispatchQueue.global(qos: .background).sync {
                 cell.imageView?.downloadedFrom(link: linkString)
                 
                 cell.imageView?.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
                 cell.imageView?.contentMode = .scaleAspectFit // OR .scaleAspectFill
                 cell.imageView?.clipsToBounds = true
-                //tableView.reloadData()
-            //}
+            }
         }
         return cell
     }
