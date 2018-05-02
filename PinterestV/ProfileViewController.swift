@@ -46,15 +46,15 @@ class ProfileViewController: UIViewController {
             self.updateLabels(for: user)
         }
         
-        DispatchQueue.global(qos: .background).sync {
+        DispatchQueue.global(qos: .utility).async {
             
-            networkManager.getInfo(for: .MyPins)
-            networkManager.callbackPins = { [unowned self] (pins: [Pin]) in
+            self.networkManager.getInfo(for: .MyPins)
+            self.networkManager.callbackPins = { [unowned self] (pins: [Pin]) in
                 self.arrPins = pins
             }
             
-            networkManager.getInfo(for: .MyBoards)
-            networkManager.callbackBoards = { [unowned self] (boards: [Board]) in
+            self.networkManager.getInfo(for: .MyBoards)
+            self.networkManager.callbackBoards = { [unowned self] (boards: [Board]) in
                 self.arrBoards = boards
             }
         }
@@ -98,13 +98,13 @@ private extension ProfileViewController {
     func updateImage(with imageLinkString: String?) {
         
         guard let linkString = imageLinkString else { return }
-        DispatchQueue.global(qos: .background).sync {
+        DispatchQueue.global(qos: .background).async {
             self.userImage.downloadedFrom(link: linkString)
         }
     }
     
     func updateLabels(for user: User) {
-        DispatchQueue.main.sync {
+        DispatchQueue.main.async {
             self.usernameLabel.text = user.username
             self.firstNameLabel.text = user.firstName
             self.lastNameLabel.text = user.lastName

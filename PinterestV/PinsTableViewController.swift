@@ -13,7 +13,8 @@ class PinsTableViewController: UITableViewController {
     // MARK: Properties
     var boards: [Board] = []
     var pins: [Pin] = []
-
+    //var cache: NSCache<AnyObject, AnyObject>?
+    //var refreshCtrl: UIRefreshControl?
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,15 +49,20 @@ extension PinsTableViewController {
         cell.notesLabel.text = boards[indexPath.section].pins[indexPath.row].note
         
         // FIXME: problem with images layout and updating
-        if let linkString = boards[indexPath.section].pins[indexPath.row].imageUrlString {
-            DispatchQueue.global(qos: .background).sync {
-                cell.imageView?.downloadedFrom(link: linkString)
-                
-                cell.imageView?.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
-                cell.imageView?.contentMode = .scaleAspectFit // OR .scaleAspectFill
-                cell.imageView?.clipsToBounds = true
+        guard let linkString = boards[indexPath.section].pins[indexPath.row].imageUrlString, linkString != "" else { return cell }
+        
+            DispatchQueue.global(qos: .utility).sync {
+                cell.pinImageView.downloadedFrom(link: linkString)
+//                self.tableView.beginUpdates()
+//                self.tableView.reloadRows(at: [indexPath], with: .fade)
+//                self.tableView.endUpdates()
+                cell.pinImageView.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+                //cell.imageView?.contentMode = .scaleAspectFit // OR .scaleAspectFill
+                cell.pinImageView.clipsToBounds = true
+                cell.setNeedsLayout()
+                //tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.fade)
             }
-        }
+        
         return cell
     }
     

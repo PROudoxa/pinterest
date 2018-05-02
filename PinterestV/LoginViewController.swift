@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         invalidLoginDataLabel.isHidden = true
+        addToolBarToKeypad()
     }
 }
 
@@ -59,6 +60,27 @@ extension LoginViewController {
             performSegue(withIdentifier: "logInSegue", sender: nil)
             
         }
+    }
+}
+
+// MARK: Private
+extension LoginViewController {
+
+    func addToolBarToKeypad() {
+        //init toolbar
+        let toolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0,  width: self.view.frame.size.width, height: 30))
+        //create left side empty space so that done button set on right side
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        toolbar.setItems([flexSpace, doneButton], animated: false)
+        toolbar.sizeToFit()
+        //setting toolbar as inputAccessoryView
+        self.loginTextField.inputAccessoryView = toolbar
+        self.passwordTextField.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneButtonAction() {
+        self.view.endEditing(true)
     }
 }
 
